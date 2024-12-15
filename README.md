@@ -51,5 +51,5 @@ DPO is an approach where the model learns directly from preference comparisons b
 The DPO approach significantly outperforms BC in aligning the model with community standards for toxicity detection. By directly learning from preference comparisons, the DPO model better understands subtle cues distinguishing acceptable content from toxic content.
 
 ## Acknowledgments
-Datasets:
+Dataset:
 [Jigsaw Unintended Bias in Toxicity Classification](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data)
