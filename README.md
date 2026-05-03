@@ -174,7 +174,7 @@ Input Text
 └──────────────┬───────────────┘
                ▼
 ┌──────────────────────────────┐
-│  Dense 128 → 256 → 128      │   ReLU activations
+│  Dense 128 → 256 → 128       │   ReLU activations
 └──────────────┬───────────────┘
                ▼
 ┌──────────────────────────────┐
@@ -198,11 +198,11 @@ $$\mathcal{L}_{\text{DPO}}(\theta) = -\frac{1}{N}\sum_{i=1}^{N}\log\sigma\bigl(s
 
 ```
 ┌───────────────┐     ┌──────────────┐     ┌─────────────────┐     ┌────────────────┐
-│  Kaggle Data  │────▶│  Pre-train   │────▶│  Fine-tune      │────▶│  Evaluate on   │
+│  Kaggle Data  │───▶│  Pre-train   │────▶│  Fine-tune      │───▶│  Evaluate on   │
 │  (160K wiki   │     │  BiLSTM      │     │  BC  or  DPO    │     │  Golden Std    │
 │   comments)   │     │  baseline    │     │  (Reddit 15K)   │     │  (974 mod-     │
 └───────────────┘     └──────────────┘     └─────────────────┘     │   removed)     │
-                                                                    └────────────────┘
+                                                                   └────────────────┘
 ```
 
 ---
